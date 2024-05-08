@@ -1,0 +1,241 @@
+
+/*=============== Global CSS Start here ==============*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Barlow", sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Variables */
+:root{
+
+    /* Colors */
+    --primary_red: #f05a23;
+    --secondary_red: rgba(255, 99, 96, 0.6);
+    --black: #000000;
+    --light_black: #4e4e4e;
+    --white: #ffffff;
+
+    /* Font Sizes */
+    --title_size: 40px;
+    --sub_title_size: 36px;
+    --sub_title_size2: 20px;
+    --paragraph_size: 16px;
+    --small_font: 14px;
+}
+
+/* Title tags here */
+.title{
+    font-size: var(--title_size);
+    line-height: 60px;
+    font-weight: 400;
+    color: var(--black);
+    text-transform: uppercase;
+}
+.sub_title{
+    font-size: var(--sub_title_size);
+    line-height: 46px;
+    font-weight: 400;
+    color: var(--black);
+    text-transform: uppercase;
+}
+.paragraph{
+    font-size: var(--paragraph_size);
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--light_black);
+}
+
+/* Buttons Design here */
+.link_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    width: fit-content;
+    color: var(--black);
+    margin-top: 50px;
+    position: relative;
+}
+.link_button i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+.link_button span{
+    font-size: var(--small_font);
+    font-weight: 700;
+}
+.link_button .rightIcon{
+    display: none;
+}
+
+
+.link_button:hover::after{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--primary_red);
+    animation-name: buttonLink;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+.link_button:hover .leftIcon{
+    display: none;
+}
+.link_button:hover .rightIcon{
+    display: block;
+}
+.link_button::after {
+    z-index: 0;
+    position: absolute;
+    left: 85px;
+    top: 0;
+    content: '';
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--primary_red);
+    animation-name: buttonLinkReverse;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes buttonLink {
+    0%{left: 0;}
+    100%{left: 85px;}
+}
+@keyframes buttonLinkReverse {
+    0% {
+        left: 85px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/*=============== Global CSS End here ==============*/
+
+/*=============== Styling Start ==============*/
+/* Header Section */
+.header{
+    background: #4D4440;
+    
+}
+.menu_item{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.menu_inner_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+.menu_link span{
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--white);
+    transition: .2s;
+}
+.dMenu_list{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.menu_inner_div .fa-chevron-down{
+    color: var(--white);
+    font-size: 13px;
+    transition: .2s;
+}
+.menu_item:hover .menu_link span{
+    color: var(--primary_red);
+} 
+.menu_item:hover .menu_link .fa-chevron-down{
+    color: var(--primary_red);
+    transform: rotate(180deg);
+} 
+.menu_item:hover .inner_menu{
+    display: block;
+}
+.inner_menu{
+    position: absolute;
+    top: 85px;
+    left: -15px;
+    width: 230px;
+    background: var(--white);
+    padding: 10px;
+    display: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
+}
+.inner_menu_item{
+    padding: 10px;
+    margin: 0;
+}
+.inner_menu_link{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--black);
+    transition: .25s;
+}
+.inner_menu_item:hover .inner_menu_link{
+    color: var(--primary_red);
+    margin-left: 15px;
+}
+
+/* Commitment Section start here */
+.commitment_section{
+    background: var(--white);
+    padding: 100px 0;
+}
+.follow_us_body{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: var(--light_black);
+    margin-bottom: 20px;
+}
+.s_icon_group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s_icon_body{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--light_black);
+    border: 1px solid var(--light_black);
+    border-radius: 50%;
+    transition: .2s;
+}
+.s_icon_body:first-child{
+    margin-right: 20px;
+}
+.s_icon_body:hover{
+    border-color: var(--primary_red);
+    color: var(--primary_red);
+}
+
+/* Commitment Section end here */
