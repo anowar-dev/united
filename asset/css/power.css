@@ -1,0 +1,55 @@
+@import url(style.css);
+.consern_section{
+    padding: 150px 0;
+    background: #FAFAFA;
+}
+.consarn_inner{
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 0;
+    border-radius: 10px;
+    background: var(--white);
+    
+}
+.consarn_single_parson .consarn_img{
+    border-radius: 10px 10px 0 0;
+}
+.single_consern_info{
+    padding: 20px;
+    min-height: 300px;
+}
+.learn_more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    font-size: var(--paragraph_size);
+    font-weight: 400;
+    color: var(--black);
+    transition: .25s;
+}
+.learn_more .learn_para{
+    margin-bottom: 0;
+    padding: 15px 30px;
+}
+.learn_more .learnmoreS{
+    width: 55px;
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 15px 0;
+    transition: .25s;
+    border-radius: 0 0 10px 0;
+}
+.learn_more:hover .learnmoreS{
+    background: var(--red_color);
+}
+.consarn_sList{
+    margin-left: 0;
+    padding-left: 15px;
+}
+.cList_item{
+    list-style: disc;
+}
+.cList_item::marker{
+    color: #005282;
+}
+ 

@@ -1,0 +1,33 @@
+@import url(style.css);
+
+.footer_section{
+    background: #2B2B2B;
+    padding: 120px 0;
+}
+.footer_link{
+    font-size: var(--paragraph_size);
+    display: block;
+    color: var(--white);
+    margin-bottom: 35px;
+    padding-left: 3rem;
+    transition: .25s;
+}
+.footer_link:hover{
+    color: var(--red_color);
+}
+.copyright{
+    font-size: 12px;
+    opacity: .6;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+.footer_logo_div .footer_link{
+    padding-left: 0;
+    opacity: .6;
+    font-size: 12px;
+    font-weight: 400;
+}

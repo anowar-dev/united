@@ -13,39 +13,49 @@ a{
 li{
     list-style: none;
 }
+img{
+    max-width: 100%;
+}
 
 /* Variables */
 :root{
 
     /* Colors */
-    --primary_red: #f05a23;
-    --secondary_red: rgba(255, 99, 96, 0.6);
-    --black: #000000;
+    --red_color: #f05a23;
+    --light_red: rgba(255, 99, 96, 0.6);
+    --black_color: #000000;
     --light_black: #4e4e4e;
     --white: #ffffff;
 
     /* Font Sizes */
-    --title_size: 40px;
-    --sub_title_size: 36px;
-    --sub_title_size2: 20px;
+    --big_font: 40px;
+    --medium_font: 36px;
+    --medium_font_2: 26px;
+    --medium_font_3: 20px;
     --paragraph_size: 16px;
     --small_font: 14px;
 }
 
 /* Title tags here */
 .title{
-    font-size: var(--title_size);
+    font-size: var(--big_font);
     line-height: 60px;
     font-weight: 400;
     color: var(--black);
     text-transform: uppercase;
 }
 .sub_title{
-    font-size: var(--sub_title_size);
+    font-size: var(--medium_font);
     line-height: 46px;
     font-weight: 400;
     color: var(--black);
     text-transform: uppercase;
+}
+.sub_title_2{
+    font-size: var(--medium_font_2);
+    font-weight: 400;
+    line-height: 36px;
+    color: var(--black_color);
 }
 .paragraph{
     font-size: var(--paragraph_size);
@@ -91,7 +101,7 @@ li{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: var(--primary_red);
+    background: var(--red_color);
     animation-name: buttonLink;
     animation-duration: 0.25s;
     animation-fill-mode: forwards;
@@ -111,7 +121,7 @@ li{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: var(--primary_red);
+    background: var(--red_color);
     animation-name: buttonLinkReverse;
     animation-duration: 0.25s;
     animation-fill-mode: forwards;
@@ -130,14 +140,47 @@ li{
     }
 }
 
+/* Back to top */
+.back_to_top{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    background: var(--red_color);
+    border-radius: 50%;
+    transition: .25s;
+    color: var(--white);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transform: translateY(100px);
+}
+.back_to_top:hover{
+    background: #424143;
+}
+
+/* Single command */
+.profile_single_parson{
+    max-width: 560px;
+}
+.profile_single_parson .person_img{
+    border-radius: 20px 0 0 0;
+    margin-bottom: 20px;
+}
 /*=============== Global CSS End here ==============*/
 
 /*=============== Styling Start ==============*/
 /* Header Section */
 .header{
-    background: #4D4440;
-    
+    background: #4D4440;   
 }
+.hesderLogo img{
+    max-width: unset;
+    height: 60px;
+    width: 140px;
+}
+
 .menu_item{
     position: relative;
     padding-top: 30px;
@@ -164,13 +207,12 @@ li{
 .menu_inner_div .fa-chevron-down{
     color: var(--white);
     font-size: 13px;
-    transition: .2s;
 }
 .menu_item:hover .menu_link span{
-    color: var(--primary_red);
+    color: var(--red_color);
 } 
 .menu_item:hover .menu_link .fa-chevron-down{
-    color: var(--primary_red);
+    color: var(--red_color);
     transform: rotate(180deg);
 } 
 .menu_item:hover .inner_menu{
@@ -199,7 +241,7 @@ li{
     transition: .25s;
 }
 .inner_menu_item:hover .inner_menu_link{
-    color: var(--primary_red);
+    color: var(--red_color);
     margin-left: 15px;
 }
 
@@ -234,8 +276,8 @@ li{
     margin-right: 20px;
 }
 .s_icon_body:hover{
-    border-color: var(--primary_red);
-    color: var(--primary_red);
+    border-color: var(--red_color);
+    color: var(--red_color);
 }
 
 /* Commitment Section end here */
