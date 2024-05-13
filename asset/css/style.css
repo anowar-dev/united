@@ -80,6 +80,13 @@ i{
     font-weight: 400;
     color: var(--light_black);
 }
+.paragraph_uppercase{
+    font-size: var(--paragraph_size);
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--black_color);
+    text-transform: uppercase;
+}
 
 /* Buttons Design here */
 .link_button{
@@ -164,6 +171,7 @@ i{
     justify-content: center;
     align-items: center;
     border-radius: 10px 0 10px 0;
+    width: fit-content;
 }
 .slide_btn{
     background: transparent;

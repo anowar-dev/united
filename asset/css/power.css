@@ -1,55 +1,100 @@
 @import url(style.css);
-.consern_section{
-    padding: 150px 0;
+@import url(comon_design.css);
+
+/* achievement_section design start here */
+.achievement_section{
     background: #FAFAFA;
 }
-.consarn_inner{
+.achievement_img{
+    text-align: center;
+    padding: 30px;
+}
+.achievement_img img{
+    height: 175px;
+    object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
+}
+.single_column{
     border: 1px solid rgba(0, 0, 0, .2);
-    padding: 0;
-    border-radius: 10px;
-    background: var(--white);
-    
+    width: 32%;
+    border-radius: 20px 0 0 0;
 }
-.consarn_single_parson .consarn_img{
-    border-radius: 10px 10px 0 0;
-}
-.single_consern_info{
-    padding: 20px;
-    min-height: 300px;
-}
-.learn_more{
+.achievement_body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 2%;
+    overflow: hidden;
+}
+.achievement_title{
+    padding: 30px;
     border-top: 1px solid rgba(0, 0, 0, .2);
-    font-size: var(--paragraph_size);
-    font-weight: 400;
-    color: var(--black);
-    transition: .25s;
 }
-.learn_more .learn_para{
-    margin-bottom: 0;
-    padding: 15px 30px;
-}
-.learn_more .learnmoreS{
-    width: 55px;
-    border-left: 1px solid rgba(0, 0, 0, .2);
+.achievement_title .sub_title_2{
     text-align: center;
-    padding: 15px 0;
-    transition: .25s;
-    border-radius: 0 0 10px 0;
 }
-.learn_more:hover .learnmoreS{
-    background: var(--red_color);
+.mibile_img{
+    max-height: 1200px;
 }
-.consarn_sList{
-    margin-left: 0;
-    padding-left: 15px;
+/* achievement_section design end here */
+
+/* Business section start here */
+.business_body{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.cList_item{
-    list-style: disc;
+.business_single .business_icon{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -1px -1px 4px #6c483a1a;
 }
-.cList_item::marker{
-    color: #005282;
+.business_icon img{
+    width: 50px;
 }
- 
+.business_single .sub_title_2{
+    text-align: center;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.power_genaration{
+    margin-top: 50px;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.power_right{
+    width: 50%;
+}
+.power_left{
+    width: 50%;
+}
+.power_single{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 15px;
+    margin-bottom: 5px;
+}
+.power_text{
+    font-size: var(--medium_font_3);
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--black_color);
+}
+/* Business section end here */
